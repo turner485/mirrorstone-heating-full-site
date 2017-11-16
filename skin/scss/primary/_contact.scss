@@ -1,0 +1,131 @@
+// -- Contact -- //
+
+.contact-body-wrapper {
+	.upper-contact {
+		width: 100%;
+		max-width: 1200px;
+		text-align: center;
+		margin: 50px auto !important;
+
+		@include media-query(max, 450) {
+			margin: 0 auto !important;
+		}
+
+		iframe {
+			height: 500px!important;
+			width: 100%;
+
+			@include media-query(max, 450) {
+				height: 285px!important;
+				margin-bottom: 20px;
+			}
+		}
+
+		h1 {
+			margin-top: 20px;
+		}
+
+		p {
+			font-size: 16px;
+			text-align: left;
+			margin-bottom: 15px;
+
+			&:nth-child(2) {
+				color: #FF8700;
+				font-size: 20px;
+				font-style: italic;
+				font-weight: 500;
+				text-align: left;
+
+				@include media-query(max, 450) {
+					font-size: 16px;
+				}
+			}
+		}
+
+		span {
+			color: $secondary;
+		}
+
+		a {
+			font-style: italic;
+			color: $secondary;
+			
+			&:hover {
+				color: black;
+			}
+		}
+	}
+
+	.contact-form {
+		text-align: center;
+		width: 100%;
+		max-width: 750px;
+		margin: 20px auto 0!important;
+		display: block;
+		float: none;
+
+		p {
+			font-size: 22px;
+			margin-bottom: 35px;
+			color: #808080;
+
+			@include media-query(max, 450) {
+				font-size: 16px;
+				margin-bottom: 10px;
+			}
+		}
+
+		.wrapper {
+			
+			@include media-query(max, 450) {
+				padding: 0 20px;
+			}
+
+			.form-horizontal {
+				position: relative;
+				left: -60px;
+
+				@include media-query(max, 450) {
+					left: 0;
+				}
+			}
+
+			.form-control {
+				border-radius: 0;
+			}
+
+			form {
+				input {
+					border: 1px solid black;
+				}
+
+				label {
+					margin-bottom: 0;
+				}
+
+				textarea {
+					border: 1px solid black;
+					height: 200px;
+					resize: none;
+				}
+
+				.error {
+					color: red;
+					width: 100%;
+					text-align: left;
+					font-weight: 500;
+				}
+			}
+
+			.primary-btn {
+				position: relative;
+				left: 60px;
+
+				@include media-query(max, 450) {
+					left: 0;
+				}
+			}
+		}
+	}
+}

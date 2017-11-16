@@ -1,0 +1,72 @@
+// -- How It Works -- //
+
+.how-it-works-body-wrapper {
+	.what-does-top {
+		width: 100%;
+		max-width: 850px;
+		text-align: center;
+		margin: 50px auto 20px!important;
+
+		@include media-query(max, 450) {
+			margin: 0 auto 20px!important;
+		}
+
+		h1 {
+			margin: 20px auto 20px;
+			text-transform: capitalize;
+		}
+
+		p {
+			max-width: 720px;
+			font-size: 20px;
+			margin: 0 auto 35px;
+			font-weight: 300;
+		}
+
+		.embed-video {
+			padding-bottom: 20px;
+
+			iframe {
+				width: 100%;
+				height: 500px;
+				border: 1px solid black;
+
+				@include media-query(max, 450) {
+					height: 200px;
+				}
+			}
+		}
+		
+		.info-section {
+			text-align: center;
+			img {
+				width: 50px;
+				margin-bottom: 20px;
+			}
+
+			p {
+				font-size: 16px;
+				margin-bottom: 20px;
+				font-weight: 400;
+				max-width: 650px;
+			}
+		}
+	}
+}
+
+// Thank You
+.thankyou-wrap {
+	.thankyou-message {
+		top: 190px;
+		position: relative;
+		text-align: center;
+	}
+
+	.ms_heating-footer {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		background: #3A353A!important;
+		height: 275px;
+	}
+}

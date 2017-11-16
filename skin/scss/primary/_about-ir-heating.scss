@@ -1,0 +1,304 @@
+// -- About IR Heating -- //
+
+.about-ir-heating-body-wrapper {
+	.banner-image-wrapper {
+		background: url('/images/banners/banner-img-2.jpg') no-repeat bottom;
+		background-size: cover;
+		height: 500px;
+
+		@include media-query(max, 450) {
+			background-size: 100% 100%;
+			background-position: center;
+			height: 285px;
+		}
+
+		.banner-wrapper {
+			max-width: 1000px;
+			text-align: center;
+			margin: 0 auto;
+			display: block;
+
+			.banner-content {
+				position: relative;
+				top: 130px;
+				text-align: left;
+				
+				@include media-query(max, 450) {
+					text-align: center;
+					top: 30px;
+				}
+
+				h2 {
+					text-align: left;
+					color: white;
+					font-size: 32px;
+
+					@include media-query(max, 450) {
+						text-align: center;
+						font-size: 26px;
+						margin-bottom: 0;
+					}
+				}
+
+				h3 {
+					font-weight: 200;
+					font-size: 28px;
+					color: white;
+					text-align: left;
+					margin-bottom: 30px;
+
+					@include media-query(max, 450) {
+						font-size: 20px;
+						text-align: center;
+						margin: 10px 0 15px;
+					}
+				}
+			}
+		}
+	}
+
+	.upper-layer {
+		width: 100%;
+		max-width: 850px;
+		text-align: center;
+		margin: 15px auto !important;
+
+		h2 {
+			margin-top: 5px;
+		}
+
+		p {
+			margin-bottom: 25px;
+		}
+	}
+
+	.image-banner {
+		width: 100%;
+		background: #f7f7f7;
+
+		.img-wrap-bg {
+			width: 100%;
+			max-width: 850px;
+			margin: auto;
+
+			img {
+				width: 550px;
+				margin: auto;
+			}
+		}
+		
+		.col-sm-12 {
+			padding: 0;
+		}
+	}
+
+	.bottom-top-layer {
+		width: 100%;
+		max-width: 850px;
+		text-align: center;
+		margin: 30px auto 0!important;
+
+		h2 {
+			margin-top: 55px;
+		}
+
+		p {
+			margin-bottom: 25px;
+		}
+
+	}
+
+	.what-does-top {
+		width: 100%;
+		max-width: 850px;
+		text-align: center;
+		margin: 0 auto !important;
+
+		h2 {
+			margin: 25px auto 20px;
+			text-transform: capitalize;
+		}
+
+		p {
+			max-width: 720px;
+			font-size: 22px;
+			margin: 0 auto 35px;
+			font-weight: 300;
+		}
+	}
+
+	.what-does-mid {
+		background: url('/images/about-IR/about_ir_banner.jpg') no-repeat top center;
+		background-position: 95% 90%;
+		padding: 40px 0;
+
+		@include media-query(max, 770) {
+			background-position: 75% 0;
+		}
+
+		@include media-query(max, 450) {
+			background-position: 85% -150%;
+		}
+
+		.wrapper {
+			width: 100%;
+			max-width: 850px;
+			display: block;
+			float: none;
+			margin: 0 auto !important;
+
+			h3 {
+				font-size: 21px;
+				text-align: center;
+				font-weight: 300;
+				color: #808080;
+				letter-spacing: 1px;
+				text-transform: none;
+			}
+			
+			ul {
+				float: left;
+				max-width: 600px;
+
+				> li {
+					padding: 7px 10px;
+					width: 100%;
+
+					 > i {
+						 float: left;
+						 font-size: 28px;
+						 margin-right: 20px;
+						 color: #008000;
+						 top: -5px;
+						 width: 7%;
+						 padding-bottom: 12px;
+						 position: relative;
+					 }
+					
+					p {
+						float: left;
+						width: 85%;
+					}
+				}	
+			}
+		}
+	}
+
+	.what-does-bottom {
+		background: #f5f5f6;
+		text-align: center;
+
+		.wrapper {
+			width: 100%;
+			max-width: 850px;
+			display: block;
+			float: none;
+			margin: 0 auto 30px!important;
+
+			h2 {
+				font-size: 21px;
+				text-align: center;
+				font-weight: 300;
+			}
+
+			.blocks {
+				.block-content {
+					background: white;
+					padding: 20px;
+					margin-bottom: 30px;
+					min-height: 270px;
+
+					@include media-query(max, 450) {
+						min-height: 210px;
+					}
+
+
+					.icon {
+						text-align: center;
+					}
+
+					.content {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.bottom-btn {
+		text-align: center;
+		margin: 25px auto 0!important;
+	}
+
+	.see-how-btn {
+		margin: 20px 0;
+	}
+
+	.advantages-ir-top {
+		margin: 5px auto 15px;
+
+		.wrapper {
+			width: 100%;
+			max-width: 850px;
+			display: block;
+			float: none;
+			margin: 0 auto !important;
+
+
+			h2 {
+				font-size: 21px;
+				font-weight: 400;
+			}
+
+			p {
+				text-align: center;
+				font-size: 13px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.advantages-ir-mid {
+		background: #f5f5f6;
+		padding: 30px 0 0;
+
+		.wrapper {
+			width: 100%;
+			max-width: 850px;
+			display: block;
+			float: none;
+			margin: 0 auto !important;
+			text-align: center;
+
+			.block-content {
+				padding: 15px;
+				text-align: left;
+				background: white;
+				margin-bottom: 30px;
+
+				h4 {
+					font-size: 16px;
+					color: black;
+					word-spacing: 2px;
+					font-weight: 500;
+					margin-bottom: 20px;
+				}
+
+				p {
+					font-size: 13px;
+					min-height: 130px;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.bottom-button {
+		width: 100%;
+		max-width: 850px;
+		display: block;
+		float: none;
+		margin: 20px auto !important;
+		text-align: center;
+	}
+}

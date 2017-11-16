@@ -1,0 +1,125 @@
+// -- Footer -- //
+
+.ms_heating-footer {
+	background: $primary;
+	height: 275px;
+
+
+	@include media-query(max, 450) {
+		height: 385px;
+	}
+
+	.link-information-wrapper {
+		max-width: 1000px;
+		margin: 65px auto 0;
+		display: block;
+		text-align: left;
+		
+		@include media-query(max, 450) {
+			margin: 20px auto 0;
+			padding: 0 10px;
+		}
+
+		h4 {
+			font-size: 16px;
+			color: white;
+			margin-bottom: 20px;
+			text-align: left;
+		}
+
+		p {
+			font-size: 11px;
+			color: #808080;
+		}
+		
+		.contact-block {
+			a {
+				color: #808080;
+				
+				&:hover, &:active, &:focus {
+					color: $secondary;
+				}
+			}
+		}
+
+		.links-block, .help-block {
+			@include media-query(max, 450) {
+				min-height: 100px;
+			}
+
+			li {
+				padding: 0;
+				font-size: 11px;
+				float: left;
+				width: 100%;
+
+				a {
+					color: #808080;
+
+					&:hover, &:active, &:focus {
+						color: $secondary;
+					}
+				}
+			}
+		}
+
+		.connect-block {
+
+			h4 {
+				text-align: right;
+
+				@include media-query(max, 450) {
+					text-align: left;
+				}
+			}
+
+			li {
+				padding: 0;
+				font-size: 11px;
+				float: right;
+
+				@include media-query(max, 450) {
+					float: left;
+				}
+
+				a {
+					color: #808080;
+
+					&:hover, &:active, &:focus {
+						color: $secondary;
+					}
+				}
+			}
+
+			.connect {
+				width: 100%;
+
+				p {
+					float: right;
+
+					@include media-query(max, 450) {
+						float: left;
+					}
+				}
+
+				img {
+					float: right;
+					width: 25px;
+					margin: 0 15px 10px 0;
+
+					@include media-query(max, 450) {
+						float: left;
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		text-align: center;
+		padding: 20px 0;
+		max-width: 1000px;
+		margin: 20px auto 0;
+		border-top: 2px solid;
+	}
+}

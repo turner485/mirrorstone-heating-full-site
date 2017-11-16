@@ -1,0 +1,155 @@
+// -- Base -- //
+
+html {
+	font-family: 'Open Sans', sans-serif!important;
+}
+
+body {
+	color: #808080;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	overflow-x: hidden;
+}
+
+h1 {
+	color: #3A353A;
+	margin-bottom: 15px;
+	font-weight: 400;
+	font-size: 32px;
+
+	@include media-query(max, 450) {
+		font-size: 28px;
+	}
+
+}
+
+h2 {
+	font-size: 28px;
+
+	@include media-query(max, 450) {
+		font-size: 22px;
+	}
+}
+
+h3 {
+	 font-size: 24px;
+
+	@include media-query(max, 450) {
+		font-size: 18px;
+	}
+
+ }
+
+h4 {
+	font-size: 20px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	word-spacing: 3px;
+}
+
+h1, h2, h3, h4 {
+	margin: 20px 0;
+	text-transform: capitalize;
+	color: $header-color;
+	font-weight: 400;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	text-align: center;
+}
+
+a {
+	&:hover, &:active, &:focus {
+		text-decoration: none;
+	}
+}
+
+ul {
+	display: block;
+	list-style-type: none;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start:0;
+	-moz-margin-start: 0;
+	-moz-padding-end: 0;
+	-moz-padding-start: 0;
+
+}
+
+li {
+	display: inline-block;
+	text-align: left;
+	float: left;
+	padding: 17px 10px;
+}
+
+.orange-line {
+	border-bottom: 5px solid #FF8700;
+	max-width: 75px;
+	text-align: center;
+	margin: 0 auto 25px;
+	display: block;
+}
+
+.flush {
+	padding: 0;
+}
+
+
+.palm-hide {
+	@include media-query(max, 770) {
+		display: none;
+	}
+}
+
+.container-wrapper {
+	width: 100%;
+	max-width: 850px;
+	text-align: center;
+	margin: 0 auto !important;
+}
+
+
+.carousel-indicators {
+	bottom: 35px!important;
+	z-index: 11;
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: inherit;
+	padding: 0;
+	
+	@include media-query(max, 450) {
+		display: none;
+	}
+
+	li {
+		padding: 5px;
+		background-color: black;
+		width: 40px;
+		height: 10px;
+		border-radius: 0;
+		border: none;
+
+		&.active {
+			padding: 5px;
+			background: #FF8700!important;
+			border: none;
+			height: 10px;
+			width: 40px!important;
+		}
+	}
+}
+
+
+.banner-content {
+	@include media-query(max, 450) {
+		top: 50px!important;
+	}
+}

@@ -1,0 +1,188 @@
+// -- Become A Reseller -- //
+
+.become-a-reseller-body-wrapper {
+	.banner-image-wrapper {
+		background: url('/images/banners/become-a-reseller-banner.jpg') no-repeat bottom;
+		background-size: cover;
+		height: 500px;
+
+		@include media-query(max, 450) {
+			background-size: 100% 100%;
+			background-position: center;
+			height: 285px;
+		}
+
+		.banner-wrapper {
+			max-width: 1000px;
+			text-align: center;
+			margin: 0 auto;
+			display: block;
+
+			.banner-content {
+				position: relative;
+				top: 130px;
+				text-align: right;
+
+				@include media-query(max, 450) {
+					text-align: center;
+					top: 30px;
+				}
+
+				h2 {
+					text-align: right;
+					color: white;
+					font-size: 32px;
+
+					@include media-query(max, 450) {
+						text-align: center;
+						font-size: 26px;
+						margin-bottom: 0;
+					}
+				}
+
+				h3 {
+					font-weight: 200;
+					margin-bottom: 30px;
+					font-size: 28px;
+					color: white;
+					text-align: right;
+
+					@include media-query(max, 450) {
+						font-size: 20px;
+						margin: 10px 0 15px;
+					}
+				}
+			}
+		}
+	}
+
+	.reseller-form-top {
+		text-align: center;
+		width: 100%;
+		max-width: 850px;
+		margin: 0 auto 15px!important;
+		display: block;
+		float: none;
+
+		h2 {
+			font-size: 28px;
+			margin: 0 auto 10px;
+		}
+
+		p {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		span {
+			font-style: italic;
+			color: $secondary;
+			margin-bottom: 10px;
+		}
+	}
+
+	.reseller-form-mid {
+		background: #f5f5f6;
+		padding: 35px 0;
+
+		.wrapper {
+			text-align: center;
+			width: 100%;
+			max-width: 850px;
+			margin: 20px auto!important;
+			display: block;
+			float: none;
+
+			.blocks {
+
+				@include media-query(max, 450) {
+					margin-bottom: 15px;
+				}
+
+				img {
+					width: 60px;
+				}
+
+				h4 {
+					min-height: 35px;
+					font-size: 16px;
+					text-transform: uppercase;
+					color: #FF8700 ;
+					margin: 10px 0;
+				}
+
+				p {
+					text-align: center;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	.reseller-form-bottom {
+		
+		@include media-query(max, 450) {
+			padding: 0 10px;
+		}
+		
+		.wrapper {
+			text-align: center;
+			width: 100%;
+			max-width: 750px;
+			margin: 20px auto 10px!important;
+			display: block;
+			float: none;
+
+			.form-control {
+				border-radius: 0;
+			}
+
+			p {
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+
+			.form-horizontal {
+				position: relative;
+				left: -60px;
+
+				@include media-query(max, 450) {
+					left: 0;
+				}
+			}
+
+			form {
+				input {
+					border: 1px solid black;
+				}
+
+				label {
+					margin-bottom: 0;
+				}
+
+				 textarea {
+					 border: 1px solid black;
+					 height: 200px;
+					 resize: none;
+				 }
+
+				.error {
+					color: red;
+					width: 100%;
+					text-align: left;
+					font-weight: 500;
+				}
+			}
+
+			.primary-btn {
+				position: relative;
+				left: 60px;
+				margin-top: 10px;
+
+				@include media-query(max, 450) {
+					left: 0;
+				}
+			}
+		}
+	}
+}

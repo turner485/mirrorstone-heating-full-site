@@ -1,0 +1,84 @@
+// -- Buttons -- //
+
+.btn {
+	color: black;
+	background: black;
+	border: 1px solid black;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 1.25;
+	min-width: 150px;
+	padding: 14px 23px;
+	letter-spacing: 1px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	transition: 0.25s ease all;
+	
+	&:hover, &:active, &:focus {
+		color: black;
+		border: 1px solid black;
+		background: white;
+	}
+}
+
+.primary-btn {
+	@extend .btn;
+	padding: 14px 23px;
+	background: $primary;
+	color: white;
+	border-color: $primary;
+
+	&:hover, &:active, &:focus {
+		color:  $primary;
+		background: white;
+		border-color: $primary;
+	}
+}
+
+.secondary-btn {
+	@extend .btn;
+	padding: 14px 23px;
+	background: $secondary;
+	color: white;
+	border-color: $secondary;
+
+	&:hover, &:active, &:focus {
+		color: $secondary;
+		background: white;
+		border-color: $secondary;
+	}
+}
+
+.white-btn {
+	@extend .btn;
+	background: white;
+	color: $primary;
+	border: 1px solid white;
+
+	&:hover, &:active, &:focus {
+		color: white;
+		background: $primary;
+		border: 1px solid $primary;
+	}
+}
+
+.trans-btn {
+	@extend .btn;
+	padding: 14px 23px;
+	background: transparent;
+	color: white;
+	border-color: white;
+
+	&:hover, &:active, &:focus {
+		color:  black;
+		background: white;
+		border-color: white;
+
+	}
+}
+
